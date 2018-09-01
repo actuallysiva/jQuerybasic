@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modal</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		 <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="modal.css">
+        <link href="https://fonts.googleapis.com/css?family=Basic|Didact+Gothic|Kaushan+Script" rel="stylesheet">
+
+
+
+</head>
+<body>
+	
+
+<div class="modal">
+  <div class="modalContent">
+  	    <span class="close">&times;</span>
+
+    <h1>Lorem Ipsum</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae expedita corrupti laudantium aperiam, doloremque explicabo ipsum earum dicta saepe delectus totam vitae ipsam doloribus et obcaecati facilis eius assumenda, cumque.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae expedita corrupti laudantium aperiam, doloremque explicabo ipsum earum dicta saepe delectus totam vitae ipsam doloribus et obcaecati facilis eius assumenda, cumque.</p>
+    
+  </div>
+</div>
+
+<button id="myBtn">Open Modal</button>
+
+<script>
+var modal = document.querySelector(".modal");
+var close = document.querySelector(".close");
+var open = document.querySelector("#myBtn");
+
+
+close.addEventListener("click", function() {
+  modal.classList.toggle("closed");
+  
+});
+
+open.addEventListener("click", function() {
+  modal.classList.toggle("closed");
+  
+});
+</script>
+
+</body>
+</html>
